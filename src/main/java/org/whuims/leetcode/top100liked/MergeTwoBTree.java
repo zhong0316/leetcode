@@ -1,5 +1,7 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.TreeNode;
+
 public class MergeTwoBTree {
 
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {

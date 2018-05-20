@@ -13,6 +13,7 @@ public class Subsets {
         backtracking(res, new ArrayList<>(), 0, nums);
         return res;
     }
+
     private void backtracking(List<List<Integer>> res, List<Integer> cur, int index, int[] nums) {
         res.add(new ArrayList<>(cur));
         for (int i = index; i < nums.length; i++) {

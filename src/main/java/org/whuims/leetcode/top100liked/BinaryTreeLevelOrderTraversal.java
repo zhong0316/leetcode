@@ -1,5 +1,7 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class BinaryTreeLevelOrderTraversal {
         bfs(root, res);
         return res;
     }
+
     private void bfs(TreeNode root, List<List<Integer>> res) {
         List<TreeNode> lis = new ArrayList<>();
         lis.add(root);

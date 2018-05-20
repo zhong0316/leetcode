@@ -1,5 +1,7 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.ListNode;
+
 public class AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

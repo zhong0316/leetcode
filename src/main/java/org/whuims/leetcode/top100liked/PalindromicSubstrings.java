@@ -20,6 +20,7 @@ public class PalindromicSubstrings {
         }
         return res;
     }
+
     private boolean isPalindromic(String s, int l, int r) {
         if (l == r) {
             return true;

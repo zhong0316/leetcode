@@ -2,6 +2,26 @@ package org.whuims.leetcode.top100liked;
 
 public class NextPermutations {
 
+    private static void sort(int[] nums, int start, int end) {
+        int loops = end - start;
+        for (int i = 0; i < loops; i++) {
+            int min = nums[start + i];
+            int minIndex = i + start;
+            for (int j = start + i + 1; j <= nums.length - 1; j++) {
+                if (nums[j] < min) {
+                    minIndex = j;
+                }
+            }
+            swap(nums, i + start, minIndex);
+        }
+    }
+
+    private static void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
     public void nextPermutation(int[] nums) {
         if (nums.length == 1) {
             return;
@@ -28,25 +48,5 @@ public class NextPermutations {
         int start = di;
         int end = nums.length - 1;
         sort(nums, start, end);
-    }
-
-    private static void sort(int[] nums, int start, int end) {
-        int loops = end - start;
-        for (int i = 0; i < loops; i++) {
-            int min = nums[start + i];
-            int minIndex = i + start;
-            for (int j = start + i + 1; j <= nums.length - 1; j++) {
-                if (nums[j] < min) {
-                    minIndex = j;
-                }
-            }
-            swap(nums, i + start, minIndex);
-        }
-    }
-
-    private static void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
     }
 }

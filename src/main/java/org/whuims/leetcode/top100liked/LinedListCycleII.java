@@ -1,5 +1,7 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.ListNode;
+
 public class LinedListCycleII {
 
     public ListNode detectCycle(ListNode head) {

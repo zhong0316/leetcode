@@ -20,16 +20,17 @@ public class GameOfLife {
             }
         }
     }
+
     private int live(int[][] board, int x, int y, int m, int n) {
         int live = 0;
-        for (int i = - 1; i <= 1; i++) {
+        for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
                 int newX = x + i;
                 int newY = y + j;
                 if ((newX == x) && (newY == y)) {
                     continue;
                 }
-                if (newX >= 0 && newX < m && newY >=0 && newY < n && (board[newX][newY] == 1 || board[newX][newY] == 3)) {
+                if (newX >= 0 && newX < m && newY >= 0 && newY < n && (board[newX][newY] == 1 || board[newX][newY] == 3)) {
                     live++;
                 }
             }

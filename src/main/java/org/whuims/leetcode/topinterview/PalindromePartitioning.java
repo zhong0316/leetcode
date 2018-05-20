@@ -15,8 +15,7 @@ public class PalindromePartitioning {
     public void dfs(String s, int pos, List<String> list, List<List<String>> res) {
         if (pos == s.length()) {
             res.add(new ArrayList<>(list));
-        }
-        else {
+        } else {
             for (int i = pos; i < s.length(); i++) {
                 if (isPalindrome(s, pos, i)) {
                     list.add(s.substring(pos, i + 1));

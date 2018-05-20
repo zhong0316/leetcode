@@ -1,5 +1,7 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 

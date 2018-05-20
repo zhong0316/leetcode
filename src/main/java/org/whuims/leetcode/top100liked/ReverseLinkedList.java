@@ -1,5 +1,7 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.ListNode;
+
 public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {

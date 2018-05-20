@@ -5,7 +5,7 @@ import org.whuims.leetcode.ListNode;
 public class DeleteNodeInLinkedList {
 
     public void deleteNode(ListNode node) {
-        node.val=node.next.val;
-        node.next=node.next.next;
+        node.val = node.next.val;
+        node.next = node.next.next;
     }
 }

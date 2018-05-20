@@ -16,6 +16,7 @@ public class CombinationSum {
         backtracking(res, new ArrayList<>(), 0, target, candidates);
         return res;
     }
+
     private void backtracking(List<List<Integer>> res, List<Integer> cur, int index, int spare, int[] nums) {
         if (spare == 0) {
             List<Integer> temp = new ArrayList<>(cur);

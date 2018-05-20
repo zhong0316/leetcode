@@ -1,12 +1,16 @@
 package org.whuims.leetcode.top100liked;
 
+import org.whuims.leetcode.TreeNode;
+
 public class BinaryTreeMaximumPathSum {
 
     int max = Integer.MIN_VALUE;
+
     public int maxPathSum(TreeNode root) {
         recursive(root);
         return max;
     }
+
     private int recursive(TreeNode root) {
         if (root == null) {
             return 0;

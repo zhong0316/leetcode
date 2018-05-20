@@ -9,7 +9,7 @@ public class LongestSubstringWithoutRepeating {
         char[] chars = s.toCharArray();
         int[] loc = new int[256];
         int left = 0;
-        for (int k=0; k < 256; k++) {
+        for (int k = 0; k < 256; k++) {
             loc[k] = -1;
         }
         int max = 0;
@@ -18,7 +18,7 @@ public class LongestSubstringWithoutRepeating {
                 left = loc[chars[i]] + 1;
             }
             loc[chars[i]] = i;
-            max = max > i-left+1 ? max : i-left+1;
+            max = max > i - left + 1 ? max : i - left + 1;
         }
         return max;
     }

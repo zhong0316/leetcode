@@ -8,6 +8,7 @@ public class FindPeakElement {
         }
         return findPeak(nums, 0, nums.length - 1);
     }
+
     private int findPeak(int[] nums, int start, int end) {
         if (start > end) {
             return -1;
