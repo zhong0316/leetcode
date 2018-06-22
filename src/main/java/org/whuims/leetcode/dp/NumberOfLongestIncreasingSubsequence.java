@@ -4,7 +4,7 @@ public class NumberOfLongestIncreasingSubsequence {
 
     public static void main(String[] args) {
         NumberOfLongestIncreasingSubsequence numberOfLongestIncreasingSubsequence = new NumberOfLongestIncreasingSubsequence();
-        int res = numberOfLongestIncreasingSubsequence.findNumberOfLIS(new int[]{2,2,2,2});
+        int res = numberOfLongestIncreasingSubsequence.findNumberOfLIS(new int[]{1,3,5,4,7});
         System.out.println(res);
     }
 
@@ -31,9 +31,10 @@ public class NumberOfLongestIncreasingSubsequence {
             }
             maxLen = Math.max(maxLen, dp[i]);
         }
-        for (int num : cnt) {
+        for (int i = 0; i < len; i++) {
+            int num = dp[i];
             if (maxLen == num) {
-                res += num;
+                res += cnt[i];
             }
         }
         return res;
