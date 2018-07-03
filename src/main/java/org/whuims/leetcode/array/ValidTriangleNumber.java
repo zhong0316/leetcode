@@ -43,7 +43,7 @@ public class ValidTriangleNumber {
      * @param A
      * @return
      */
-    public static int triangleNumber(int[] A) {
+    public int triangleNumber(int[] A) {
         Arrays.sort(A);
         int count = 0, n = A.length;
         for (int i = n - 1; i >= 2; i--) {
