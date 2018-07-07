@@ -40,6 +40,7 @@ public class ZeroOneMatrix {
                 if (x < 0 || x >= m || y < 0 || y >= n) {
                     continue;
                 }
+                visit[x][y] = true;
                 if (x > 0 && !visit[x - 1][y]) {
                     matrix[x - 1][y] = num + 1;
                     queue.offer(new int[]{x - 1, y});
