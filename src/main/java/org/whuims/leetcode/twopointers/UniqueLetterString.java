@@ -8,9 +8,6 @@ public class UniqueLetterString {
         UniqueLetterString uniqueLetterString = new UniqueLetterString();
         int res = uniqueLetterString.uniqueLetterString("ABA");
         System.out.println(res);
-        System.out.println("commit 3");
-        System.out.println("commit 1");
-        System.out.println("commit 2");
     }
     public int uniqueLetterString(String s) {
         if (s == null || s.length() <= 1) {
