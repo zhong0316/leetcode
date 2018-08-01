@@ -1,5 +1,7 @@
 package org.whuims.leetcode.stack;
 
+import java.util.LinkedList;
+
 public class ScoreOfParentheses {
 
     public static void main(String[] args) {
@@ -15,20 +17,44 @@ public class ScoreOfParentheses {
         int n = S.length();
         int res = 0;
         char[] cs = S.toCharArray();
-        int depth = 0;
-        int lastChar = ' ';
+//        int depth = 0;
+//        int lastChar = ' ';
+//        for (int i = 0; i < n; i++) {
+//            char c = cs[i];
+//            if (c == '(') {
+//                depth++;
+//            } else {
+//                depth--;
+//                if (lastChar == '(') {
+//                    res += 1 << depth;
+//                }
+//            }
+//            lastChar = c;
+//        }
+//        return res;
+        LinkedList<Character> stack = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             char c = cs[i];
             if (c == '(') {
-                depth++;
+                stack.offerLast(c);
             } else {
-                depth--;
-                if (lastChar == '(') {
-                    res += 1 << depth;
+                if (stack.peekLast() == '(') {
+                    stack.pollLast();
+                    stack.offerLast('1');
+                } else {
+                    char temp = stack.pollLast();
+                    if (stack.peekLast() != '(') {
+                        stack.pollLast();
+                        int num = temp - '0';
+                        num *= 2;
+                        stack.offerLast(Character.forDigit(num, 10));
+                    } else {
+
+                    }
                 }
             }
-            lastChar = c;
         }
+        System.out.println();
         return res;
     }
 }
