@@ -2,17 +2,17 @@ package org.whuims.leetcode.dp;
 
 public class KnightProbabilityInChessboard {
 
+    int[] dx = {1, 2, 2, 1, -1, -2, -2, -1};
+    int[] dy = {2, 1, -1, -2, -2, -1, 1, 2};
+
     public static void main(String[] args) {
         KnightProbabilityInChessboard knightProbabilityInChessboard = new KnightProbabilityInChessboard();
         double res = knightProbabilityInChessboard.knightProbability(3, 2, 0, 0);
         System.out.println(res);
     }
 
-    int[] dx = {1, 2, 2, 1, -1, -2, -2, -1};
-    int[] dy = {2, 1, -1, -2, -2, -1, 1, 2};
-
     public double knightProbability(int N, int K, int r, int c) {
-        double[][][] dp = new double[N][N][K+1];
+        double[][][] dp = new double[N][N][K + 1];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 dp[i][j][0] = 1.0D;

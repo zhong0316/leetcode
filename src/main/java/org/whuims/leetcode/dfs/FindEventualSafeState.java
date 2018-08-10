@@ -1,17 +1,18 @@
 package org.whuims.leetcode.dfs;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FindEventualSafeState {
 
     public static void main(String[] args) {
         FindEventualSafeState findEventualSafeState = new FindEventualSafeState();
-        int[][] graph = new int[][]{{1,2},{2,3},{5},{0},{5},{},{}};
+        int[][] graph = new int[][]{{1, 2}, {2, 3}, {5}, {0}, {5}, {}, {}};
         List<Integer> res = findEventualSafeState.eventualSafeNodes(graph);
         res.stream().forEach(System.out::println);
     }
 
-//    // bfs
+    //    // bfs
 //    public List<Integer> eventualSafeNodes(int[][] graph) {
 //        Map<Integer, Set<Integer>> oGraph = new HashMap<>();
 //        Map<Integer, Set<Integer>> rGraph = new HashMap<>();
@@ -67,7 +68,7 @@ public class FindEventualSafeState {
             return color[node] == 2;
 
         color[node] = 1;
-        for (int nei: graph[node]) {
+        for (int nei : graph[node]) {
             if (color[node] == 2)
                 continue;
             if (color[nei] == 1 || !dfs(nei, color, graph))

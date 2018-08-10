@@ -6,6 +6,7 @@ public class ContiguousArray {
         ContiguousArray ct = new ContiguousArray();
         System.out.println(ct.findMaxLength(new int[]{0, 0, 0, 1, 1, 1, 0}));
     }
+
     public int findMaxLength(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;

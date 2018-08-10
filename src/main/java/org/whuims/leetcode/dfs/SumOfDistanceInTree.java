@@ -6,13 +6,6 @@ import java.util.HashSet;
 
 public class SumOfDistanceInTree {
 
-    public static void main(String[] args) {
-        SumOfDistanceInTree sumOfDistanceInTree = new SumOfDistanceInTree();
-        int[][] edges = {{0, 1}, {0, 2}, {2, 3}, {2, 4}, {2, 5}};
-        int[] res = sumOfDistanceInTree.sumOfDistancesInTree(6, edges);
-        Arrays.stream(res).forEach(o -> System.out.println(o));
-    }
-
     /**
      * When we move our root from one node to its connected node, one part of nodes get closer, one the other part get further.
      * If we know exactly hom many nodes in both parts, we can solve this problem.
@@ -40,6 +33,13 @@ public class SumOfDistanceInTree {
     int[] res, count;
     ArrayList<HashSet<Integer>> tree;
     int n;
+
+    public static void main(String[] args) {
+        SumOfDistanceInTree sumOfDistanceInTree = new SumOfDistanceInTree();
+        int[][] edges = {{0, 1}, {0, 2}, {2, 3}, {2, 4}, {2, 5}};
+        int[] res = sumOfDistanceInTree.sumOfDistancesInTree(6, edges);
+        Arrays.stream(res).forEach(o -> System.out.println(o));
+    }
 
     public int[] sumOfDistancesInTree(int N, int[][] edges) {
         tree = new ArrayList<>();

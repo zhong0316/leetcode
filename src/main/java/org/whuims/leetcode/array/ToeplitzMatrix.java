@@ -4,7 +4,7 @@ public class ToeplitzMatrix {
 
     public static void main(String[] args) {
         ToeplitzMatrix toeplitzMatrix = new ToeplitzMatrix();
-        int[][] matrix = new int[][]{{1,2,3,4}, {5,1,2,3}, {9,5,1,2}};
+        int[][] matrix = new int[][]{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}};
         boolean res = toeplitzMatrix.isToeplitzMatrix(matrix);
         System.out.println(res);
     }
@@ -35,6 +35,7 @@ public class ToeplitzMatrix {
         }
         return true;
     }
+
     private boolean checkLine(int m, int n, int x, int y, int[][] matrix) {
         for (int i = 0; i < m; i++) {
             int val = matrix[i][0];

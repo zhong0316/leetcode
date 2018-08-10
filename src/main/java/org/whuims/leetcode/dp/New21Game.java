@@ -9,6 +9,7 @@ public class New21Game {
         double res = new21Game.new21Game(21, 17, 10);
         System.out.println(res);
     }
+
     public double new21Game(int N, int K, int W) {
         if (K == 0) {
             return 0;

@@ -17,6 +17,7 @@ public class LongestUncommonSebsequenceII {
      * So for each string in list, we check if it is the subsequence of the others.
      * If it is not the subsequence of the others, it is the candidate answer.
      * We get the overall longest one and return the length of it.
+     *
      * @param strs
      * @return
      */
@@ -40,7 +41,6 @@ public class LongestUncommonSebsequenceII {
     }
 
     /**
-     *
      * @param s1
      * @param s2
      * @return true if s2 is subsequence s1

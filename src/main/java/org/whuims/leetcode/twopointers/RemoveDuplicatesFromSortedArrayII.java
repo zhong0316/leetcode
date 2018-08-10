@@ -4,7 +4,7 @@ public class RemoveDuplicatesFromSortedArrayII {
 
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedArrayII removeDuplicatesFromSortedArrayII = new RemoveDuplicatesFromSortedArrayII();
-        int[] nums = {0,0,1,1,1,1,2,3,3};
+        int[] nums = {0, 0, 1, 1, 1, 1, 2, 3, 3};
         int res = removeDuplicatesFromSortedArrayII.removeDuplicates(nums);
         System.out.println(res);
     }

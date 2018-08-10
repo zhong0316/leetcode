@@ -5,14 +5,14 @@ import java.util.Map;
 
 public class LongestIncreasingPathInMatrix {
 
+    Map<String, Integer> cache = new HashMap<>();
+
     public static void main(String[] args) {
         int[][] matrix = new int[][]{{3, 4, 5}, {3, 2, 6}, {2, 2, 1}};
         LongestIncreasingPathInMatrix longestIncreasingPathInMatrix = new LongestIncreasingPathInMatrix();
         int res = longestIncreasingPathInMatrix.longestIncreasingPath(matrix);
         System.out.println(res);
     }
-
-    Map<String, Integer> cache = new HashMap<>();
 
     public int longestIncreasingPath(int[][] matrix) {
         if (matrix == null || matrix.length == 0) {

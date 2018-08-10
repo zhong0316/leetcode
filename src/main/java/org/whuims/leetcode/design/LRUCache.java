@@ -5,30 +5,10 @@ import java.util.Map;
 
 public class LRUCache {
 
-    class Node {
-        int key;
-        int val;
-        Node prev;
-        Node next;
-
-        public Node(int key, int val) {
-            this.key = key;
-            this.val = val;
-        }
-
-        public Node(int key, int val, Node prev, Node next) {
-            this.key = key;
-            this.val = val;
-            this.prev = prev;
-            this.next = next;
-        }
-    }
-
     private int capacity;
     private Map<Integer, Node> map = new HashMap<>();
     private Node head;
     private Node tail;
-
     public LRUCache(int capacity) {
         this.capacity = capacity;
     }
@@ -47,5 +27,24 @@ public class LRUCache {
 
     public int get(int key) {
         return 0;
+    }
+
+    class Node {
+        int key;
+        int val;
+        Node prev;
+        Node next;
+
+        public Node(int key, int val) {
+            this.key = key;
+            this.val = val;
+        }
+
+        public Node(int key, int val, Node prev, Node next) {
+            this.key = key;
+            this.val = val;
+            this.prev = prev;
+            this.next = next;
+        }
     }
 }

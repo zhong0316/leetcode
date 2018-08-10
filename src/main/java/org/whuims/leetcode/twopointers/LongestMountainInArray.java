@@ -4,7 +4,7 @@ public class LongestMountainInArray {
 
     public static void main(String[] args) {
         LongestMountainInArray longestMountainInArray = new LongestMountainInArray();
-        int[] A = {2,1,4,7,3,2,5};
+        int[] A = {2, 1, 4, 7, 3, 2, 5};
         int res = longestMountainInArray.longestMountain(A);
         System.out.println(res);
     }

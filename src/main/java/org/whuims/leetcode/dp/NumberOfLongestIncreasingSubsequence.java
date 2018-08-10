@@ -4,7 +4,7 @@ public class NumberOfLongestIncreasingSubsequence {
 
     public static void main(String[] args) {
         NumberOfLongestIncreasingSubsequence numberOfLongestIncreasingSubsequence = new NumberOfLongestIncreasingSubsequence();
-        int res = numberOfLongestIncreasingSubsequence.findNumberOfLIS(new int[]{1,3,5,4,7});
+        int res = numberOfLongestIncreasingSubsequence.findNumberOfLIS(new int[]{1, 3, 5, 4, 7});
         System.out.println(res);
     }
 

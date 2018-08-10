@@ -40,6 +40,7 @@ public class ValidTriangleNumber {
 
     /**
      * O(n^2)
+     *
      * @param A
      * @return
      */

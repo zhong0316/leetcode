@@ -10,6 +10,7 @@ public class UniqueLetterString {
         System.out.println(res);
         System.out.println("commit 3");
     }
+
     public int uniqueLetterString(String s) {
         if (s == null || s.length() <= 1) {
             return s.length();

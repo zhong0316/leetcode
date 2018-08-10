@@ -7,8 +7,9 @@ public class SplitArrayIntoConsecutiveSubsequences {
 
     /**
      * 1. If it does not belong any sequences : append.getOrDefault(num, 0) == 0, create a new sequence. It requires num + 1 and num + 2 count > 0.
-     *
+     * <p>
      * 2. Once it has sequence, move sequece to num + 1.
+     *
      * @param nums
      * @return
      */

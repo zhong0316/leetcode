@@ -8,7 +8,7 @@ public class LargestDivisibleSubset {
 
     public static void main(String[] args) {
         LargestDivisibleSubset largestDivisibleSubset = new LargestDivisibleSubset();
-        List<Integer> res = largestDivisibleSubset.largestDivisibleSubset(new int[]{2,3,8,9,27});
+        List<Integer> res = largestDivisibleSubset.largestDivisibleSubset(new int[]{2, 3, 8, 9, 27});
         for (int num : res) {
             System.out.print(" " + num);
         }

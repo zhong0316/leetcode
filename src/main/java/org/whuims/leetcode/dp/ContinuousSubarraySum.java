@@ -7,7 +7,7 @@ public class ContinuousSubarraySum {
 
     public static void main(String[] args) {
         ContinuousSubarraySum continuousSubarraySum = new ContinuousSubarraySum();
-        int[] nums = {0,0};
+        int[] nums = {0, 0};
         System.out.println(continuousSubarraySum.checkSubarraySum(nums, 0));
     }
 

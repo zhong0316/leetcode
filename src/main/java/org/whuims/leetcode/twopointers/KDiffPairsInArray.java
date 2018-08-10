@@ -1,6 +1,7 @@
 package org.whuims.leetcode.twopointers;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class KDiffPairsInArray {
 
@@ -54,7 +55,7 @@ public class KDiffPairsInArray {
 //    }
 
     public int findPairs(int[] nums, int k) {
-        if (nums == null || nums.length == 0 || k < 0)   return 0;
+        if (nums == null || nums.length == 0 || k < 0) return 0;
 
         Map<Integer, Integer> map = new HashMap<>();
         int count = 0;

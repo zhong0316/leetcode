@@ -6,13 +6,14 @@ public class IncreasingSubsequences {
 
     public static void main(String[] args) {
         IncreasingSubsequences increasingSubsequences = new IncreasingSubsequences();
-        int[] nums = {10,10,10,10,10,10,10,10,10,10,10,10,10,10,10};
+        int[] nums = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
         List<List<Integer>> res = increasingSubsequences.findSubsequences(nums);
         res.stream().forEach(o -> {
             o.stream().forEach(r -> System.out.print(" " + r));
             System.out.println();
         });
     }
+
     public List<List<Integer>> findSubsequences(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return new ArrayList<>();

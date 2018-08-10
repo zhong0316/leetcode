@@ -3,7 +3,7 @@ package org.whuims.leetcode.dp;
 public class LargestSumOfAverages {
 
     public static void main(String[] args) {
-        int[] A = {9,1,2,3,9};
+        int[] A = {9, 1, 2, 3, 9};
         int K = 3;
         LargestSumOfAverages largestSumOfAverages = new LargestSumOfAverages();
         double res = largestSumOfAverages.largestSumOfAverages(A, K);

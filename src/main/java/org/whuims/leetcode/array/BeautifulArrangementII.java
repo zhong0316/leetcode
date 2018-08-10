@@ -16,6 +16,7 @@ public class BeautifulArrangementII {
      * By following this pattern, k numbers will have k-1 distinct difference values;
      * and all the rest numbers should have |ai - a_i-1| = 1;
      * In total, we will have k-1+1 = k distinct values.
+     *
      * @param n
      * @param k
      * @return

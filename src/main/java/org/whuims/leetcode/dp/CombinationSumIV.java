@@ -1,12 +1,12 @@
 package org.whuims.leetcode.dp;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class CombinationSumIV {
 
     public static void main(String[] args) {
         CombinationSumIV combinationSumIV = new CombinationSumIV();
-        int[] nums = {4,2,1};
+        int[] nums = {4, 2, 1};
         Arrays.sort(nums);
         int target = 32;
         int res = combinationSumIV.combinationSum4(nums, target);
