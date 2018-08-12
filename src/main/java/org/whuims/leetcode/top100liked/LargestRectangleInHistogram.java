@@ -4,6 +4,12 @@ import java.util.Stack;
 
 public class LargestRectangleInHistogram {
 
+    public static void main(String[] args) {
+        LargestRectangleInHistogram largestRectangleInHistogram = new LargestRectangleInHistogram();
+        int[] height = {6, 2, 5, 4, 5, 1, 6};
+        largestRectangleInHistogram.largestRectangleArea(height);
+    }
+
     public int largestRectangleArea(int[] height) {
         int len = height.length;
         Stack<Integer> s = new Stack<>();
@@ -14,7 +20,8 @@ public class LargestRectangleInHistogram {
                 s.push(i);
             } else {
                 int tp = s.pop();
-                int temp = height[tp] * (s.isEmpty() ? i : i - 1 - s.peek());
+                int width = s.isEmpty() ? i : i - 1 - s.peek();
+                int temp = height[tp] * width;
                 maxArea = Math.max(maxArea, temp);
                 i--;
             }
