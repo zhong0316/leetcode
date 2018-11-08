@@ -1,10 +1,10 @@
-package org.whuims.leetcode.dfs;
+package org.whuims.leetcode.dp;
 
-public class New21Game {
+public class New21GameDP {
 
     public static void main(String[] args) {
-        New21Game new21Game = new New21Game();
-        double res = new21Game.new21Game(21, 17, 10);
+        New21GameDP new21GameDP = new New21GameDP();
+        double res = new21GameDP.new21Game(21, 17, 10);
         System.out.println(res);
     }
 //    public double new21Game(int N, int K, int W) {
